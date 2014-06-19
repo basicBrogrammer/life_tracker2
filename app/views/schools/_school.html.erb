@@ -1,0 +1,6 @@
+<h2>Schools </h2>
+<p><%= school.user %></p>
+<p>
+  <%= link_to 'Edit', edit_school_path(school) %>
+  <%= link_to 'Destroy', school, method: :delete, data: { confirm: 'Are you sure?' } %>
+</p>

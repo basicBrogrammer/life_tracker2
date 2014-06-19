@@ -1,19 +1,9 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @school.name %>
-</p>
+<h1>Listing schools</h1>
 
-<p>
-  <strong>Start year:</strong>
-  <%= @school.start_year %>
-</p>
 
-<p>
-  <strong>Graduation year:</strong>
-  <%= @school.graduation_year %>
-</p>
+<%= render partial: "school", locals: {:school => @school} %>
 
 <%= link_to 'Edit', edit_school_path(@school) %> |
 <%= link_to 'Back', schools_path %>
